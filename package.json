@@ -1,0 +1,13 @@
+{
+    "name": "tools",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "start": "concurrently \"npm run start-client\" \"npm run start-server\"",
+        "start-client": "cd client && npm start",
+        "start-server": "cd server && python index.py"
+    },
+    "dependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
