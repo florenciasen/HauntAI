@@ -53,12 +53,14 @@ HauntAI is a tool that uses AI to detect sensitive data inside a single file or 
 - Check the terminal output for details about sensitive data detection.
 
 
-###⚙️ Requirements
+
+### ⚙️ Requirements
 - Node.js (v14 or newer)
 - Python 3.7 or higher
 - Internet connection (for AI detection using external API)
 
-###💡 Features
+
+### 💡 Features
 - AI-based detection of secrets, credentials, API keys, passwords, and sensitive configuration
 - Analyze single files or folders
 - Ignore pattern filtering to reduce false positives
