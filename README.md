@@ -41,11 +41,13 @@ pip3 install Flask flask-cors Werkzeug google-generativeai reportlab
 ```
 
 Also, ensure your package.json reflects the correct Python version by updating:
+```bash
 "scripts": {
   "start": "concurrently \"npm run start-client\" \"npm run start-server\"",
   "start-client": "cd client && npm start",
   "start-server": "cd server && python3 index.py"
 }
+```
 
 3. Make sure you are back in the root directory, then start the application:
   ```bash
