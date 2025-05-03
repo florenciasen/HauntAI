@@ -4,6 +4,11 @@ HauntAI is a tool that uses AI to detect sensitive data inside a single file or 
 
 ---
 
+### ⚙️ Requirements
+- Node.js (v14 or newer)
+- Python 3.7 or higher
+- Internet connection (for AI detection using external API)
+
 ## 🌐 Web Version
 
 ### 🔧 Installation
@@ -20,7 +25,29 @@ HauntAI is a tool that uses AI to detect sensitive data inside a single file or 
    chmod +x node_modules/.bin/react-scripts
    ```
 
-2. Make sure you are back in the root directory, then start the application:
+2. Set Up Python Virtual Environment and Install Backend Dependencies
+```bash
+⁠cd server
+⁠python -m venv venv
+⁠source venv/bin/activate
+pip install Flask flask-cors Werkzeug google-generativeai reportlab
+```
+
+⚠️ Note: If you're using python3, make sure to run:
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip3 install Flask flask-cors Werkzeug google-generativeai reportlab
+```
+
+Also, ensure your package.json reflects the correct Python version by updating:
+"scripts": {
+  "start": "concurrently \"npm run start-client\" \"npm run start-server\"",
+  "start-client": "cd client && npm start",
+  "start-server": "cd server && python3 index.py"
+}
+
+3. Make sure you are back in the root directory, then start the application:
   ```bash
    npm start
   ```
@@ -52,12 +79,6 @@ HauntAI is a tool that uses AI to detect sensitive data inside a single file or 
 - The analysis result will be displayed directly in the terminal where the server is running.
 - Check the terminal output for details about sensitive data detection.
 
-
-
-### ⚙️ Requirements
-- Node.js (v14 or newer)
-- Python 3.7 or higher
-- Internet connection (for AI detection using external API)
 
 
 ### 💡 Features
