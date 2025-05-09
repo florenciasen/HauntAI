@@ -6,7 +6,7 @@ HauntAI is a tool that uses AI to detect sensitive data inside a single file or 
 
 ### ⚙️ Requirements
 - Node.js (v14 or newer)
-- Python 3.7 or higher
+- Python 3.9 or higher
 - Internet connection (for AI detection using external API)
 
 ## 🌐 Web Version
